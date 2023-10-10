@@ -7,7 +7,8 @@ function main(){
     // If found, add the event listener
     if (inputElement) {
 		console.log("FOUND ADDING EVENT LISTENER");
-        inputElement.addEventListener('input', onValueChange);
+	inputElement.addEventListener('change', onValueChange);
+
 		console.log(inputElement);
     } else {
         // If not found, try again after 2 seconds
