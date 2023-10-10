@@ -9,7 +9,9 @@ if (inputElement) {
 }
     
 function findInputByDocumentType() {
+    console.log(document.querySelector('input[id*="documentType"]'));
     return document.querySelector('input[id*="documentType"]');
+    
 }
 
 // Function to execute when the input value changes
