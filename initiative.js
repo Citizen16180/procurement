@@ -1,4 +1,13 @@
 // Function to find the input element
+function main(){
+    console.log(========radu stcript====");
+      // Add the event listener
+const inputElement = findInputByDocumentType();
+if (inputElement) {
+    inputElement.addEventListener('input', onValueChange);
+}  
+}
+    
 function findInputByDocumentType() {
     return document.querySelector('input[id*="documentType"]');
 }
@@ -15,8 +24,5 @@ function findInputByDocumentTypeValue() {
     return inputElement ? inputElement.value : null;
 }
 
-// Add the event listener
-const inputElement = findInputByDocumentType();
-if (inputElement) {
-    inputElement.addEventListener('input', onValueChange);
-}
+
+main();
